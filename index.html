@@ -143,6 +143,12 @@
       box-shadow: 0 0 0 8px rgba(249,198,208,0.3), 0 0 0 16px rgba(249,198,208,0.12);
       animation: fadeInDown 0.9s ease 0.1s both, avatarPulse 3s ease-in-out 1.5s infinite;
       position: relative;
+      overflow: hidden;
+    }
+    .hero-avatar img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
     }
     @keyframes avatarPulse {
       0%, 100% { box-shadow: 0 0 0 8px rgba(249,198,208,0.3), 0 0 0 16px rgba(249,198,208,0.12); }
@@ -708,7 +714,7 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-badge">Portfolio học tập · 2026</div>
-  <div class="hero-avatar">🌸</div>
+  <div class="hero-avatar"><img src="picture.jpg" alt="Vũ Hải Anh" /></div>
   <h1 class="hero-name">Vũ Hải Anh</h1>
   <p class="hero-sub">MSV: 25040026</p>
   <p class="hero-school">
